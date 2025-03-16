@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                width: 75%;
+            }
+            
+        </style>
+    </head>
+
+<form action="/lomake.html">
+    <fieldset>
+        <legend>Contact information:</legend>
+        <table>
+            <tr>
+                <td><label for="fname">First name:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+                <td><legend>Preferred contact method:</legend></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last name:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+                <td><input type = checkbox id = "PreferEmail" name = "PreferEmail" value = "email">Email</td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+                <td><input type = checkbox id = "PreferPhone" name = "PreferPhone" value = "phone">Telephone</td>
+            </tr>
+            <tr>
+                <td><label for="phone">Telephone:</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </table>
+</form>
+</fieldset>
+<fieldset>
+    <legend>Fedback:</legend><label for="feedback">Message subject: </label><input type="text" id="subject" name="subject" ></td>
+        <textarea id="message" name="message" rows="10" cols="45"></textarea><br>
+            <label for "file"> Attach file:</label>
+            <input type="file" id="file" name="file"><br>
+            <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+    
+</html>
