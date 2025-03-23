@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="LomakeStyles.css">
+    </head>
+    <body>
+        <form action="/lomake.html">
+            <fieldset class="contact-info">
+                <legend>Contact Information:</legend>
+                <div class="form-group">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telephone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <p>Preferred contact method:</p>
+                    <label><input type="checkbox" id="PreferEmail" name="PreferEmail" value="email"> Email</label>
+                    <label><input type="checkbox" id="PreferPhone" name="PreferPhone" value="phone"> Telephone</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="feedback">
+                <legend>Feedback:</legend>
+                <div class="form-group">
+                    <label for="subject">Message subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10" cols="45"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file">Attach file:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
